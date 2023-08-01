@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+    - ${MAILHOG_GUI_PORT}:8025
+    - ${MAILHOG_SMTP_PORT}:1025
+    environment:
+    - MAILHOG_GUI_PORT
+    - MAILHOG_SMTP_PORT
+    - MH_AUTH_FILE=/home/mailhog/auth_file.txt
+    volumes:
+    - ./auth_file.txt:/home/mailhog/auth_file.txt
+
