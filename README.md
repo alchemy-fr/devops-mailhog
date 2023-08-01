@@ -4,23 +4,26 @@ A simple mailhog stack with auth in file
 
 ## auth setting
 
-Default auth is `test:test`
+- Users are define in `auth_file.txt`
 
-`test:$2a$04$qxRo.ftFoNep7ld/5jfKtuBTnGqff/fZVyj53mUC5sVf9dtDLAi/S`
+- the Default user is `test:test`
+
+   `test:$2a$04$qxRo.ftFoNep7ld/5jfKtuBTnGqff/fZVyj53mUC5sVf9dtDLAi/S`
 
 
 
-Edit `auth_file.txt` content for set users
+Edit `auth_file.txt`  for set users
 
-mailhog doc 
+mailhog doc about auth 
 
 https://github.com/mailhog/MailHog/blob/master/docs/Auth.md
 
 
 
-## launching stack
+## launch the stack
 
-`docker-compose up -d` 
+  `docker-compose up -d` 
+
+  or
  
-
- `dc up -d`
+  `dc up -d`
