@@ -1,5 +1,6 @@
 # devops-mailhog
-A simple mailhog stack with auth in file 
+
+A simple mailhog stack with auth thue an htaccess in file 
 
 
 ## auth setting
